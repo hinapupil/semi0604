@@ -24,18 +24,18 @@
 ## Node.js のインストール
 <https://nodejs.org/ja/>  
 ```bash
-$ node -v
+node -v
 ```  
 ```bash
-$ npm -v
+npm -v
 ```
 
 ## Firebase CLI のインストール
 ```bash
-$ npm install -g firebase-tools
+npm install -g firebase-tools
 ```
 ```bash
-$ firebase --version
+firebase --version
 ```
 
 ## Firebase プロジェクトの作成
@@ -46,16 +46,16 @@ $ firebase --version
 
 次に，ターミナルに戻って以下のコマンドを打つ．
 ```bash
-$ firebase login
+firebase login
 ```
 ブラウザが開きログインを求められるので先ほどログインしたアカウントを選択する．  
 <br>
 次に，プロジェクト用のディレクトリを作成し，そこへ移動して以下のコマンドを打ってFirebaseプロジェクトの初期化を行う．
 
 ```bash
-$ mkdir YourFirebaseChatApp
-$ cd YourFireBaseChatApp
-$ firebase init
+mkdir YourFirebaseChatApp
+cd YourFireBaseChatApp
+firebase init
 
 ? Which Firebase CLI features do you want to setup for this folder?
 # => Database, Functions, Hosting を選択
@@ -230,12 +230,12 @@ exports.delete = functions.https.onRequest((request, response)=>{
 ## デプロイ
 ターミナルで以下のコマンドを打つ．
 ```bash
-$ firebase serve 
+firebase serve 
 # => ローカルでテスト
 ```
 もしくは
 ```bash
-$ firebase deploy
+firebase deploy
 # => デプロイ
 ```
 おそらく，ここでデプロイしても無料プランだと Cloud Function が使えないのでエラーが出る．  
@@ -247,7 +247,7 @@ Webで動いているのがみたい人はエラーで出力されたURLに飛�
 ## プロジェクトの停止または削除方法
 ### 停止方法
 ```bash
-$ firebase hosting:disable
+firebase hosting:disable
 ```
 デプロイしたサイトが停止する．
 
