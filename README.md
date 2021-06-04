@@ -232,9 +232,9 @@ exports.delete = functions.https.onRequest((request, response)=>{
 ```bash
 $ firebase serve 
 # => ローカルでテスト
-
+```
 もしくは
-
+```bash
 $ firebase deploy
 # => デプロイ
 ```
