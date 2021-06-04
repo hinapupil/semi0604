@@ -207,9 +207,9 @@ exports.delete = functions.https.onRequest((request, response)=>{
 
     "simplebbs":{
       "posts":{
-        ".read": "true",
-      },
-    },
+        ".read": "true"
+      }
+    }
   }
 }
 ```
