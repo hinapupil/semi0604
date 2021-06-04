@@ -237,4 +237,4 @@ Webで動いているのがみたい人はエラーで出力されたURLに飛�
 違うブラウザで二つウィンドウを並べたり，異なるデバイスの二つの画面で動作を確認すると，リアルタイムで同期されていることが良くわかる．
 
 ## プロジェクトの削除方法
-![プロジェクトの削除方法](https://github.com/hinapupil/semi0604/Animation.gif)
+![プロジェクトの削除方法](https://github.com/hinapupil/semi0604/blob/main/Animation.gif)
