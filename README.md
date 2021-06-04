@@ -253,3 +253,9 @@ $ firebase hosting:disable
 
 ### 削除方法
 ![プロジェクトの削除方法](https://github.com/hinapupil/semi0604/blob/main/Animation.gif)
+
+# 参考文献
+- アプリ開発が怖いほど楽になる「Firebase」を徹底解説！【初心者向け】<https://career.levtech.jp/guide/knowhow/article/386/>
+- Firebaseで古風な掲示板(BBS)を作る<https://qiita.com/nacasora/items/713919f7a56024f5c59f>
+- 【Firebase】Cloud Functions チュートリアル Chapter 02 環境構築<https://zenn.dev/tentel/books/a96e4a64d3a672911f25/viewer/b54c90>
+- Firebase CLIコマンドメモ<https://zenn.dev/captain_blue/articles/firebase-command-memo>
