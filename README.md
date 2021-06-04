@@ -51,8 +51,19 @@ $ firebase login
 ブラウザが開きログインを求められるので先ほどログインしたアカウントを選択する．  
 <br>
 次に，プロジェクト用のディレクトリを作成し，そこへ移動して以下のコマンドを打ってFirebaseプロジェクトの初期化を行う．
+
 ```bash
 $ firebase init
+
+? Which Firebase CLI features do you want to setup for this folder?
+# => Database, Functions, Hosting を選択
+
+? Please select an option:
+# => Use an existing project を選択
+? Select a default Firebase project for this directory:
+# => 先ほどブラウザで作ったプロジェクト名を選択
+
+# 他はエンターを押せばよい
 ```
 
 
@@ -219,4 +230,11 @@ exports.delete = functions.https.onRequest((request, response)=>{
 ```bash
 $ firebase deploy
 ```
-完了時に出力されるホスティングURLで正しく動作しているか確認．
+おそらく，ここでデプロイしても無料プランだと Cloud Function が使えないのでエラーが出る．  
+Webで動いているのがみたい人はエラーで出力されたURLに飛び従量制プランへ変更してもう一度上記のコマンドを叩いてほしい．プランはアカウントごとではなくプロジェクトごとに管理される．従量制プランでも無料容量以内なら請求はない．心配な場合は本実習後にプロジェクトの削除を行う（後述）．  
+<br>
+完了すると出力されるホスティングURLで正しく動作しているか確認する．  
+違うブラウザで二つウィンドウを並べたり，異なるデバイスの二つの画面で動作を確認すると，リアルタイムで同期されていることが良くわかる．
+
+## プロジェクトの削除方法
+![プロジェクトの削除方法](https://github.com/hinapupil/semi0604/Animation.gif)
