@@ -187,7 +187,7 @@ exports.delete = functions.https.onRequest((request, response)=>{
   })
 })
 ```
-
+## 設定ファイル等
 ### ```firebase.json```
 以下に書き換え．
 ```json
